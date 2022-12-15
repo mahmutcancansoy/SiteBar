@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100vw;
+    height: 100vh;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
+    background-color: var(--color-gray-10);
+}
+
+/*Dots*/
+.threeDots {
+    display: flex;
+    gap: 8px;
+    margin: 16px 0px 0px 16px;
+}
+.dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot1 {
+    background-color: var(--color-secondary-red);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dot2 {
+    background-color: var(--color-secondary-yellow);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dot3 {
+    background-color: var(--color-secondary-green);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.nav_bar_logo_area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 24px 0px 30px;
+}
+.nav_bar_logo_img {
+    width: 24px;
+    height: 24px;
+}
+.nav_bar_logo_text {
+    font-style: normal;
+    font-weight:  500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-gray-1);
+}
+
+/* Search */
+.nav_label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 8px;
+    margin: 20px 16px 8px 16px;
+    padding: 10px 0px 10px 16px;
+    background-color: var(--color-gray-6);
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.08), inset 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.icon-search_line {
+    width: 16px;
+    height: 16px;
+    color: var(--color-gray-4);
+}
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--color-gray-6);
+    color: var(--color-gray-3);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+input::-moz-placeholder {
+    color: var(--color-gray-4);
+    opacity: 1;
+}
+input:-ms-input-placeholder {
+    color: var(--color-gray-4);
+}
+input::-webkit-input-placeholder {
+    color: var(--color-gray-4);
+}
+
+/* Menu */
+.menu_content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0px 10px 32px;
+    color: var(--color-gray-2);
+    text-decoration: none;
+    transition: all;
+}
+.menu_content:hover {
+    padding: 10px 0px 10px 16px;
+    margin: 0px 16px;
+    background-color: var(--color-secondary-blue);
+    border-radius: 8px;
+    color: #FFFFFF;
+
+}
+.menu_content:hover .icons {
+    color: #FFFFFF;
+}
+.menu_content_description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.menu_content:hover .number_of_notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-gray-6);
+    color: var(--color-gray-4);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+}
+.number_of_notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 32px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-gray-6);
+    color: var(--color-gray-4);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+/* Menu's Icons */
+.icons {
+    color: var(--color-gray-3);
+}
+.icon-dashboard_line {
+    width: 17px;
+    height: 16px;
+}
+.icon-clipboard_line {
+    width: 14px;
+    height: 17px;
+}
+.icon-schedules_line {
+    width: 15px;
+    height: 15px;
+}
+.icon-messages_line {
+    width: 17px;
+    height: 16px;
+}
+.icon-inbox_line {
+    width: 15px;
+    height: 15px;
+}
+.icon-analytics_line {
+    width: 17px;
+    height: 15px;
+}
+.icon-news_line {
+    width: 15px;
+    height: 16px;
+}
+.icon-settings_line {
+    width: 17px;
+    height: 16px;
+}
+
+/* Message Pulse */
+.menu_content:hover .pulse {
+    left: 28px;
+}
+.pulse {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-secondary-red);
+    position: absolute;
+    left: 44px;
+    right: 0px;
+    top: 10px;
+    bottom: 0px;
+}
+.pulse:before,.pulse:after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-secondary-red);
+    z-index: 3;
+    opacity: 0.7;
+}
+.pulse:before {
+    animation: pulse 1s ease-out infinite;
+}
+.pulse:after {
+    animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse {
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+hr {
+    margin: 8px 32px;
+    background-color: var(--color-gray-6);
+    border: 1px solid  var(--color-gray-6);
+}
+
+/* Profile */
+.profile_bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    margin-top: 111px;
+    border-radius: 0px 0px 8px 8px;
+    background-color: var(--color-gray-6);
+
+}
+.profile_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user_information{
+
+}
+.user_name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-gray-1);
+}
+.user_e-mail {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-gray-3);
+}
+.icon-entrance_line {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: 33px;
+    right: 23px;
+    color: var(--color-gray-4);
+}
+
+/* Dark Mode Button */
+button {
+    background-color: var(--color-gray-10);
+    color: var(--color-gray-1);
+    border: none;
+    border-radius: 8px;
+    font-style: oblique;
+    font-size: 200px;
+
+}

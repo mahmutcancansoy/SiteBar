@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ming Cute Nav Bar</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/variable.css">
+    <link href="https://dev.iconly.io/public/J9SnuicFHTBA/iconly.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+    <div class="threeDots">
+        <div class="dots dot1"></div>
+        <div class="dots dot2"></div>
+        <div class="dots dot3"></div>
+    </div>
+    <div class="nav_bar_logo_area">
+        <div class="nav_bar_logo_img"><img src="images/logo.png"> </div>
+        <div class="nav_bar_logo_text">MingCute</div>
+    </div>
+            <label class="nav_label">
+                <span class="icon-search_line"></span><input type="search" placeholder="Search">
+            </label>
+    <div class="menu">
+        <a href="#" class="menu_content">
+            <div class="icons icon-dashboard_line"></div>
+            <div class="menu_content_description">Dashboard</div>
+        </a>
+        <a href="#" class="menu_content">
+            <div class="icons icon-clipboard_line"></div>
+            <div class="menu_content_description">Orders</div>
+            <div class="number_of_notifications">5</div>
+        </a>
+        <a href="#" class="menu_content">
+            <div class="icons icon-schedules_line"></div>
+            <div class="menu_content_description">Schedules</div>
+        </a>
+        <a href="#" class="menu_content">
+            <div class="icons icon-messages_line"></div>
+            <div class="pulse"></div>
+            <div class="menu_content_description">Messages</div>
+            <div class="number_of_notifications">3</div>
+        </a>
+        <a href="#" class="menu_content">
+            <div class="icons icon-inbox_line"></div>
+            <div class="menu_content_description">Inbox</div>
+        </a>
+        <a href="#" class="menu_content">
+            <div class="icons icon-analytics_line"></div>
+            <div class="menu_content_description">Analytics</div>
+        </a>
+        <hr>
+        <a href="#" class="menu_content">
+            <div class="icons icon-news_line"></div>
+            <div class="menu_content_description">News</div>
+        </a>
+        <a href="#" class="menu_content">
+            <div class="icons icon-settings_line"></div>
+            <div class="menu_content_description">Settings</div>
+        </a>
+    </div>
+        <div class="profile_bar">
+            <div class="profile_img"><img src="images/Avater.png"> </div>
+            <div class="user_information">
+                <div class="user_name">Richard</div>
+                <div class="user_e-mail">9394lay@gmail.com</div>
+            </div>
+            <a href="#">
+            <div class="icon-entrance_line"></div>
+            </a>
+        </div>
+    </nav>
+    <button onclick="myFunction()">Theme Change</button>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+    }
+</script>
+
+</body>
+</html>
